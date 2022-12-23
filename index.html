@@ -21,14 +21,20 @@
     <div class="logo-container">
       <img src="./assets/images/logo.svg" alt="Company logo" class="logo">
     </div>
-    <nav>
-    <ul class="nav-list">
-      <li class="header-item"><a href="" class="nav-link">Home</a></li>
-      <li class="header-item"><a href="" class="nav-link">New</a></li>
-      <li class="header-item"><a href="" class="nav-link">Popular</a></li>
-      <li class="header-item"><a href="" class="nav-link">Trending</a></li>
-      <li class="header-item"><a href="" class="nav-link">Categories</a></li>
-    </ul>
+
+    <div class="overlay hidden" id="overlay-element"></div>
+
+    <img src="./assets/images/icon-menu.svg" class="nav-icon" id="nav-icon" onclick="displayNav()">
+
+    </div>
+    <nav id="nav">
+    
+      <a href="" class="nav-link">Home</a>
+      <a href="" class="nav-link">New</a>
+      <a href="" class="nav-link">Popular</a>
+      <a href="" class="nav-link">Trending</a>
+      <a href="" class="nav-link">Categories</a>
+    
     </nav>
     
 
@@ -58,7 +64,7 @@
         <p id="new-title">New</p>
 
         <div class="new-article">
-          <h3 class="new-article-title">Hydrogen VS Electric Cars</h3>
+          <a href="#" class="new-article-title">Hydrogen VS Electric Cars</a>
 
           <p class="text new-article-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div>
@@ -66,7 +72,7 @@
         <hr>
 
         <div class="new-article">
-          <h3 class="new-article-title">The Downsides of AI Artistry</h3>
+          <a href="#" class="new-article-title">The Downsides of AI Artistry</a>
 
           <p class="text new-article-text">What are the possible adverse effects of on-demand AI image generation?</p>
         </div>
@@ -74,7 +80,7 @@
         <hr>
 
         <div class="new-article">
-          <h3 class="new-article-title">Is VC Funding Drying Up?</h3>
+          <a href="#" class="new-article-title">Is VC Funding Drying Up?</a>
 
           <p class="text new-article-text"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
@@ -84,29 +90,29 @@
 
     <!-- For lower section with top 3 articles-->
 
-      <div class="low-article">
+      <div class="low-article" id="low-1">
         <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" class="low-article-image"/>
         <div class="low-article-section">
           <h3 class="low-article-number">01</h3>
-          <h4 class="low-article-title">Reviving Retro PCs</h4>
+          <a href="#" class="low-article-title">Reviving Retro PCs</a>
           <p class="text low-article-text">What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
 
-      <div class="low-article">
+      <div class="low-article" id="low-2">
         <img src="./assets/images/image-top-laptops.jpg" alt="Closeup image of a keyboard" class="low-article-image"/>
         <div class="low-article-section">
           <h3 class="low-article-number">02</h3>
-          <h4 class="low-article-title">Top 10 Laptops of 2022</h4>
+          <a href="#" class="low-article-title">Top 10 Laptops of 2022</a>
           <p class="text low-article-text">Our best picks for various needs and budgets.</p>
         </div>
       </div>
 
-      <div class="low-article">
+      <div class="low-article" id="low-3">
         <img src="./assets/images/image-gaming-growth.jpg" alt="Playstation controller floating over a hand" class="low-article-image"/>
         <div class="low-article-section">
           <h3 class="low-article-number">03</h3>
-          <h4 class="low-article-title">The Growth of Gaming</h4>
+          <a href="#" class="low-article-title">The Growth of Gaming</a>
           <p class="text low-article-text">How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
@@ -114,6 +120,6 @@
   </main>
   
 
-  
+<script src="script.js"></script>  
 </body>
 </html>
